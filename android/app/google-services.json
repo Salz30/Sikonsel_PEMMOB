@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734594404556",
+    "project_id": "sikonsel-mobile",
+    "storage_bucket": "sikonsel-mobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734594404556:android:0a728e72c6812f78593269",
+        "android_client_info": {
+          "package_name": "com.example.sikonsel_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfpYAsfHa61kuhWiTEEyj_2Tzu-KJMDHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

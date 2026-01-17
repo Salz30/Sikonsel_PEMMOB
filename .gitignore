@@ -1,0 +1,12 @@
+# 1. ABAIKAN SEMUA FILE & FOLDER DULU
+*
+!*/
+
+# 2. PANGGIL KEMBALI YANG PENTING SAJA
+!lib/
+!lib/**
+!android/
+!android/**
+!pubspec.yaml
+!pubspec.lock
+!.gitignore
