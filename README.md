@@ -1,6 +1,6 @@
 # 📱 SIKONSEL Mobile (Sistem Informasi Konseling Sekolah)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-green) ![Backend](https://img.shields.io/badge/backend-PHP%20Native-purple)
+![Version](https://img.shields.io/badge/version-1.0.0--stable-blue.svg) ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-green) ![Backend](https://img.shields.io/badge/backend-PHP%20Native-purple)
 
 **Sikonsel Mobile** adalah ekstensi aplikasi berbasis smartphone dari ekosistem Sikonsel. Aplikasi ini dirancang untuk memberikan aksesibilitas *real-time* bagi Siswa, Guru BK, dan Orang Tua dalam melakukan layanan bimbingan konseling tanpa terikat lokasi dan waktu (24/7), melengkapi versi Web yang digunakan di lingkungan sekolah.
 
@@ -15,21 +15,28 @@ Dalam era digital, masalah kesehatan mental dan akademik siswa bisa terjadi kapa
 
 ---
 
+## 🆕 Pembaruan Terkini (v1.0.0)
+Pembaruan terbaru mencakup peningkatan stabilitas dan penambahan fitur UI:
+* ✅ **Menu "Tentang Aplikasi":** Akses informasi versi dan pengembang melalui Header Dashboard & Grid Menu.
+* ✅ **Enhanced Login Security:** Perbaikan manajemen sesi menggunakan `flutter_secure_storage` dengan enkripsi Android yang lebih stabil.
+* ✅ **Robust API Handling:** Penanganan respon server yang lebih baik (Auto-trim JSON & Error Catching) untuk mencegah aplikasi *force close*.
+* ✅ **UI/UX Refresh:** Penambahan tombol pintas (shortcut) di header dashboard untuk akses cepat.
+
+---
+
 ## 🌟 Fitur Unggulan (Berdasarkan Role)
 
 ### 🎓 1. Role Siswa
-Akses personal bagi siswa untuk mendapatkan bantuan mental dan akademik.
-* **🔐 Curhat Online Terenkripsi:** Mengirim laporan masalah (Bullying, Akademik, Keluarga) dengan keamanan enkripsi AES-256. Isi curhatan tidak bisa dibaca oleh siapapun kecuali Guru BK.
-* **📅 Reservasi Konseling:** Mengajukan jadwal temu tatap muka dengan Guru BK secara digital (pilih tanggal & jam).
-* **📂 Riwayat & Status:** Memantau status laporan (*Pending* ➔ *Diproses* ➔ *Selesai*) secara real-time.
-* **🔔 Push Notification:** Notifikasi saat jadwal disetujui atau laporan ditanggapi.
+Akses personal bagi siswa untuk mendapatkan bantuan mental & akademik.
+* **📅 Reservasi Online:** Janji temu dengan Guru BK tanpa antre manual.
+* **📩 e-Curhat (Pengaduan):** Kirim cerita/masalah secara privat.
+* **📜 Riwayat Konseling:** Memantau status laporan (Diterima/Diproses/Selesai).
+* **📢 Info Sekolah:** Update agenda sekolah dan info beasiswa terbaru.
 
-### 👩‍🏫 2. Role Guru BK (Admin)
-Alat manajemen konseling mobile untuk Guru yang dinamis.
-* **📱 Dashboard Monitoring:** Melihat ringkasan laporan masuk hari ini di HP.
-* **⚡ Quick Action:** Menyetujui jadwal temu atau mengubah status laporan (Tindak Lanjut) dengan satu sentuhan.
-* **📞 One-Tap Contact:** Menghubungi siswa atau orang tua via WhatsApp langsung dari aplikasi.
-* **📊 Manajemen Data Siswa:** Melihat profil singkat siswa saat melakukan *home visit*.
+### 🏫 2. Role Guru BK (Admin)
+*Fitur Admin dikelola utama melalui Web, namun Mobile digunakan untuk monitoring.*
+* **🔔 Notifikasi Real-time:** Notifikasi masuk saat ada siswa melapor.
+* **📊 Monitoring Siswa:** Melihat profil singkat siswa saat melakukan *home visit*.
 
 ### 👨‍👩‍👧 3. Role Orang Tua (Public Access)
 Fitur khusus untuk menjembatani komunikasi rumah dan sekolah.
@@ -46,10 +53,11 @@ Project ini menggunakan konsep **Hybrid Architecture**. Web dan Mobile berbagi D
 ### Tech Stack
 | Komponen | Teknologi | Keterangan |
 | :--- | :--- | :--- |
-| **Mobile App** | Flutter | Antarmuka Pengguna (Web/Android) |
+| **Mobile App** | Flutter (Dart) | Antarmuka Pengguna (Web/Android) |
+| **State Mgt** | Native SetState | Manajemen state ringan & cepat |
+| **Storage** | Flutter Secure Storage | Penyimpanan Token & Sesi Terenkripsi |
 | **Backend API** | PHP Native | RESTful API (JSON Response) |
 | **Database** | MySQL | Penyimpanan Data Terpusat |
-| **Security** | OpenSSL (AES-256) | Enkripsi Database |
 
 ### Topologi Sistem
 ```text
@@ -59,7 +67,7 @@ Project ini menggunakan konsep **Hybrid Architecture**. Web dan Mobile berbagi D
       ⬇️                 ⬇️                   ⬇️
 ------------------------------------------------------
 |           🔥 BACKEND CORE (PHP Native)             |
-|   (Auth, Encryption Logic, Controller Logic)       |
+|   (Authentication, Logic, Notification System)     |
 ------------------------------------------------------
-                     ⬇️
+                      ⬇️
               [ 🗄️ MySQL Database ]
