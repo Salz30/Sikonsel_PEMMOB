@@ -61,10 +61,10 @@ Project ini menggunakan konsep **Hybrid Architecture**. Web dan Mobile berbagi D
 
 ### Topologi Sistem
 ```text
-[📱 HP Siswa]      [📱 HP Guru BK]      [💻 Web Sekolah]
-      ⬇️                 ⬇️                   ⬇️
-[ REST API (JSON) ] [ REST API (JSON) ]   [ HTML Views ]
-      ⬇️                 ⬇️                   ⬇️
+[📱 HP Siswa]                          [💻 Web Sekolah]
+      ⬇️                                       ⬇️
+[ REST API (JSON) ]                      [ HTML Views ]
+      ⬇️                                       ⬇️
 ------------------------------------------------------
 |           🔥 BACKEND CORE (PHP Native)             |
 |   (Authentication, Logic, Notification System)     |
