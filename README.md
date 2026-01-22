@@ -34,7 +34,7 @@ Akses personal bagi siswa untuk mendapatkan bantuan mental & akademik.
 * **📢 Info Sekolah:** Update agenda sekolah dan info beasiswa terbaru.
 
 ### 🏫 2. Role Guru BK (Admin)
-*Fitur Admin dikelola utama melalui Web, namun Mobile digunakan untuk monitoring.*
+*Fitur Admin dikelola utama melalui Web.*
 * **🔔 Notifikasi Real-time:** Notifikasi masuk saat ada siswa melapor.
 * **📊 Monitoring Siswa:** Melihat profil singkat siswa saat melakukan *home visit*.
 
