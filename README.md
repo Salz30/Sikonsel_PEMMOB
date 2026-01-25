@@ -45,6 +45,17 @@ Fitur khusus untuk menjembatani komunikasi rumah dan sekolah.
 * **🔒 Sesi Aman:** Sistem keamanan *Auto-Destroy Session* untuk mencegah data tertinggal di perangkat umum.
 
 ---
+## Demo Aplikasi
+
+
+Uploading Demo aplikasi SIKONSEL (1).mp4…
+
+
+
+Uploading Demo aplikasi SIKONSEL (1).mp4…
+
+
+---
 
 ## 🏗️ Arsitektur Teknis
 
@@ -71,3 +82,4 @@ Project ini menggunakan konsep **Hybrid Architecture**. Web dan Mobile berbagi D
 ------------------------------------------------------
                       ⬇️
               [ 🗄️ MySQL Database ]
+
