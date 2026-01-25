@@ -50,11 +50,6 @@ Fitur khusus untuk menjembatani komunikasi rumah dan sekolah.
 
 Uploading Demo aplikasi SIKONSEL (1).mp4…
 
-
-
-Uploading Demo aplikasi SIKONSEL (1).mp4…
-
-
 ---
 
 ## 🏗️ Arsitektur Teknis
