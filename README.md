@@ -46,10 +46,7 @@ Fitur khusus untuk menjembatani komunikasi rumah dan sekolah.
 
 ---
 ## Demo Aplikasi
-
-
-Uploading Demo aplikasi SIKONSEL (1).mp4…
-
+Link GDRIVE: https://drive.google.com/file/d/1zH5dhwmxWRDzW9Ovie_g7_2InrgARZ1t/view?usp=sharing
 ---
 
 ## 🏗️ Arsitektur Teknis
